@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Spritesheet</title>
+  <link rel="stylesheet" href="src/css/style.css" />
+  <style>
+    /* inline styles for demo purposes */
+
+    .social-icon {
+      display: inline-block;
+      width: 5rem;
+      height: 5rem;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+
+    .social-icon--instagram {
+      background-image: url('images/instagram.svg');
+    }
+
+    .social-link:hover .social-icon--instagram {
+      background-image: url('images/instagram-hover.svg');
+    }
+
+    .social-icon--tiktok {
+      background-image: url('images/tiktok.svg');
+    }
+
+    .social-link:hover .social-icon--tiktok {
+      background-image: url('images/tiktok-hover.svg');
+    }
+
+    .social-icon--mastodon {
+      background-image: url('images/mastodon.svg');
+    }
+
+    .social-link:hover .social-icon--mastodon {
+      background-image: url('images/mastodon-hover.svg');
+    }
+
+    .social-icon--twitch {
+      background-image: url('images/twitch.svg');
+    }
+
+    .social-link:hover .social-icon--twitch {
+      background-image: url('images/twitch-hover.svg');
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <ul>
+      <li><a class="button" href="hover-svg-swap.html">svg swap</a></li>
+      <li><a class="button" href="hover-svg-css-spritesheet.html">svg spritesheet</a></li>
+      <li><a class="button" href="hover-svg-css-stack.html">svg stack</a></li>
+      <li><a class="button" href="hover-image-reposition.html">img reposition</a></li>
+      <li><a class="button" href="scroll.html">scroll</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

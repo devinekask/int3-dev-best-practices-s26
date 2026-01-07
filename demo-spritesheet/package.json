@@ -1,0 +1,15 @@
+{
+  "name": "demo-spritesheet",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "gsap": "^3.12.5",
+    "svg-sprite": "^2.0.4",
+    "vite": "^6.0.7"
+  }
+}

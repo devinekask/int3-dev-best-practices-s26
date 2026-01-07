@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Spritesheet</title>
+  <link rel="stylesheet" href="src/css/style.css" />
+  <style>
+    /* inline styles for demo purposes */
+
+    .social-icon {
+      display: inline-block;
+      width: 5rem;
+      height: 5rem;
+      background-repeat: no-repeat;
+      background-image: url('images/sprites/social-icons-css-spritesheet.svg');
+      background-size: 300%;
+    }
+
+    .social-icon--instagram {
+      background-position: 0 0;
+    }
+
+    .social-link:hover .social-icon--instagram {
+      background-position: 50% 0;
+    }
+
+    .social-icon--tiktok {
+      background-position: 100% 0;
+    }
+
+    .social-link:hover .social-icon--tiktok {
+      background-position: 100% 50%;
+    }
+
+    .social-icon--mastodon {
+      background-position: 0 50%;
+    }
+
+    .social-link:hover .social-icon--mastodon {
+      background-position: 50% 50%;
+    }
+
+    .social-icon--twitch {
+      background-position: 0 100%;
+    }
+
+    .social-link:hover .social-icon--twitch {
+      background-position: 50% 100%;
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <ul>
+      <li><a class="button" href="hover-svg-swap.html">svg swap</a></li>
+      <li><a class="button" href="hover-svg-css-spritesheet.html">svg spritesheet</a></li>
+      <li><a class="button" href="hover-svg-css-stack.html">svg stack</a></li>
+      <li><a class="button" href="hover-image-reposition.html">img reposition</a></li>
+      <li><a class="button" href="scroll.html">scroll</a></li>
+    </ul>
+  </nav>
+  <div>
+    <article class="paper">
+      <h2 class="h2">better: svg css spritesheet</h2>
+      <ul>
+        <li>
+          <a href="#" class="social-link"><span class="social-icon social-icon--instagram"></span><span class="sr-only">Instagram</span></a>
+        </li>
+        <li>
+          <a href="#" class="social-link"><span class="social-icon social-icon--tiktok"></span><span class="sr-only">Instagram</span></a>
+        </li>
+        <li>
+          <a href="#" class="social-link"><span class="social-icon social-icon--mastodon"></span><span class="sr-only">Instagram</span></a>
+        </li>
+        <li>
+          <a href="#" class="social-link"><span class="social-icon social-icon--twitch"></span><span class="sr-only">Instagram</span></a>
+        </li>
+      </ul>
+    </article>
+  </div>
+</body>
+</html>

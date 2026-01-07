@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Spritesheet</title>
+  <link rel="stylesheet" href="src/css/style.css" />
+  <style>
+    /* inline styles for demo purposes */
+    .apple {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .apple__wrapper {
+      width: 50vw;
+      height: 50vw;
+      overflow: hidden;
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+      max-width: 400px;
+      max-height: 400px;
+    }
+
+    .apple__image {
+      width: calc(100% * 5);
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <ul>
+      <li><a class="button" href="hover-svg-swap.html">svg swap</a></li>
+      <li><a class="button" href="hover-svg-css-spritesheet.html">svg spritesheet</a></li>
+      <li><a class="button" href="hover-svg-css-stack.html">svg stack</a></li>
+      <li><a class="button" href="hover-image-reposition.html">img reposition</a></li>
+      <li><a class="button" href="scroll.html">scroll</a></li>
+    </ul>
+  </nav>
+  <!-- Content from https://compost.recyc-quebec.gouv.qc.ca -->
+  <main>
+    <div class="section-with-apple">
+      <section class="hero h-full center-all container">
+        <h1 class="title">
+          <span>Vie de</span>
+          <span>compost</span>
+        </h1>
+      </section>
+      <section class="quote h-full center-all container">
+        <h2 class="sr-only">Quote</h2>
+        <blockquote class="quote">
+          Composter, c’est faire son bout de chemin pour la planète. Pour qu’un cœur de pomme devienne du compost, il passe par plusieurs étapes. La plus importante : le choix de l’endroit où on le depose.
+        </blockquote>
+      </section>
+      <div class="apple">
+        <div class="apple__wrapper">
+          <img src="images/apple.webp" alt="apple" class="apple__image" width="3510" height="2808" />
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="src/js/scroll.js"></script>
+</body>
+</html>

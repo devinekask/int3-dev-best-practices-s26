@@ -1,0 +1,118 @@
+@import url('reset.css');
+
+body {
+  overflow-x: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.preloader {
+  display: none;
+  background-color: darkgreen;
+  color: white;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader__visual {
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale3d(1, 0, 1);
+  transform-origin: bottom;
+}
+
+.preloader__visual--has-transition {
+  transition: all 0.5s ease;
+}
+
+.is-loading .preloader {
+  display: flex;
+}
+
+.is-loading body {
+  overflow: hidden;
+}
+
+.h-full {
+  height: 100vh;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.center-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.title > span {
+  display: block;
+}
+
+.section-with-apple {
+  position: relative;
+}
+
+.hero .title {
+  padding-top: 6em;
+}
+
+.apple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.apple__wrapper {
+  width: 50vw;
+  height: 50vw;
+  overflow: hidden;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.apple__image {
+  width: 100%;
+  height: auto;
+}
