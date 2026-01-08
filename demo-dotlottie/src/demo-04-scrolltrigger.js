@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const player = new DotLottie({
   canvas: document.querySelector("#anim"),
-  src: "assets/lottie-demo.json",
+  src: "assets/bodymoving-export.json",
 });
 
 gsap.to(player.canvas, {

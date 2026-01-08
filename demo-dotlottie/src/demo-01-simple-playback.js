@@ -38,3 +38,10 @@ new DotLottie({
   canvas: document.querySelector("#anim-lasso"),
   src: "assets/lasso.json",
 });
+
+new DotLottie({
+  autoplay: true,
+  loop: true,
+  canvas: document.querySelector("#anim-bitmap"),
+  src: "assets/gears-encoded.json",
+});
