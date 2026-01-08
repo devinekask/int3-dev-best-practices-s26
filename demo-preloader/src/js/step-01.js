@@ -16,6 +16,7 @@ const appleImagePaths = new Array(13).fill(0).map((_, i) => {
 console.log(appleImagePaths);
 
 const init = () => {
+  document.documentElement.classList.remove('is-loading');
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: ".section-with-apple",

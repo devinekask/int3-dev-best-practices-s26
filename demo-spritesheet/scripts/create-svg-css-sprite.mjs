@@ -37,4 +37,5 @@ for (const type of Object.values(result.css)) {
   const outputPath = join('public/images/sprites', basename(type.path));
   await mkdir(dirname(outputPath), { recursive: true });
   await writeFile(outputPath, type.contents);
+  console.log(`Created: ${outputPath}`);
 }

@@ -7,6 +7,7 @@ const spriter = new SVGSpriter({
   mode: {
     stack: {
       example: true,
+      sprite: 'sprite.stack.svg'
     }
   },
   shape: {
@@ -37,4 +38,5 @@ for (const type of Object.values(result.stack)) {
   const outputPath = join('public/images/sprites', basename(type.path));
   await mkdir(dirname(outputPath), { recursive: true });
   await writeFile(outputPath, type.contents);
+  console.log(`Created: ${outputPath}`);
 }
