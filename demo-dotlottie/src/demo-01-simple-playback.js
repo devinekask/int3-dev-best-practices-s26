@@ -1,10 +1,13 @@
 import { DotLottie } from '@lottiefiles/dotlottie-web';
 
+import bodyMovingData from './bodymoving-export.json?url';
+console.log('bodyMovingData', bodyMovingData);
+
 new DotLottie({
   autoplay: true,
   loop: true,
   canvas: document.querySelector("#anim-all"),
-  src: "assets/bodymoving-export.json",
+  src: bodyMovingData,
 });
 
 new DotLottie({
