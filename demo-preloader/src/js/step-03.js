@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const appleImagePaths = new Array(13).fill(0).map((_, i) => {
   const index = `${i + 1}`.padStart(3, "0");
-  return `./images/apple-webp-sequence/apple_${index}.webp`;
+  return `./images/apple-avif-sequence/apple_${index}.avif`;
 });
 
 let appleImages = [];
